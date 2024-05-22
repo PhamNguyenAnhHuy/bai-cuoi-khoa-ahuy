@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dự Báo Thời Tiết</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <script src="https://www.w3schools.com/lib/w3.js"></script> -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />        
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('https://wallpaperaccess.com/full/773629.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="navbar">
+    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon">
+    <!-- <button id="Back">Back</button> -->
+    <div class="Btn-Back">
+      <a class="back" href="beggin.html"><img src="https://cdn-icons-png.flaticon.com/128/4129/4129565.png" alt="Back icon"></a>
+    </div>
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top" style="margin-bottom:auto ;">Dự Báo Thời Tiết</h1>
+     
+    <div id="root">
+      <div class="container">
+          <div class="main-section">
+              <div class="search-bar">
+                  <i class="fas fa-search search-icon"></i>
+                  <input type="text" name="search-city" id="search-input" placeholder="Tìm kiếm thành phố...">
+              </div>
+              <div class="info-wrapper">
+                  <p class="city-name">__</p>
+                  <p class="weather-state">__</p>
+                  <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon">
+                  <p class="temperature">__</p>
+              </div>
+          </div>
+          <div class="additional-section">
+              <div class="row">
+                  <div class="item">
+                      <div class="label">Mặt trời mọc</div>
+                      <div class="value sunrise">__</div>
+                  </div>
+                  <div class="item">
+                      <div class="label">Mặt trời lặn</div>
+                      <div class="value sunset">__</div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="item">
+                      <div class="label">Độ ẩm</div>
+                      <div class="value"><span class="humidity">__</span>%</div>
+                  </div>
+                  <div class="item">
+                      <div class="label">Gió</div>
+                      <div class="value"><span class="wind-speed">__</span> km/h</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">By Anh Huy</p>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </div>
+</div>
+
+</body>
+</html>
