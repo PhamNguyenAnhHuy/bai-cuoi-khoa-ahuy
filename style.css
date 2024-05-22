@@ -131,7 +131,9 @@
     display: flex;
     justify-content: space-between
   }
-  .Btn-Back{
-    height: 1px;
-    width: 120px;
+  .Btn-Back .icon-back{
+    height: 50px;
+    width: 60px;
+    margin-top: 20px;
+    margin-right: 10px;
   }
