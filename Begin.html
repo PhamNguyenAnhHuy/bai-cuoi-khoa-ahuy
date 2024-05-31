@@ -30,27 +30,81 @@ body, html {
 .menu {
   display: none;
 }
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: black; */
+    background-color: #24262b;
+    color: white;
+    padding: 10px;
+    
+}
+.navBtn{
+    text-decoration: none;
+    padding: 20px;
+}  
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.navBtn:hover{
+    background-color: white;
+    color: black;
+}
+
+.navBtn {
+  justify-content: space-between;
+}
+
+.more{
+  display: block;
+
+}
 </style>
 </head>
 <body>
 
 <!-- Links (sit on top) -->
 <div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
+  <div class="w3-row w3-padding w3-black navbar">
     <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block w3-black"></a>
+      <a href="#" class="w3-button w3-flex w3-black">HOME</a>
     </div>
     <div class="w3-col s3">
-      <a href="index.html" class="w3-button w3-block w3-black">weather</a>
+      <a href="#99" class="w3-button w3-flex w3-black">ABOUT</a>
     </div>
     <div class="w3-col s3">
-      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+      <a href="#menu" class="w3-button w3-flex w3-black ">MENU</a>
     </div>
-    <div class="w3-col s3">
-      <a href="login.html" class="w3-button w3-block w3-black">log out</a>
-    </div>
+    <div id="logout">
+      <a href="login.html" class="w3-button w3-flex w3-black"><span class="material-symbols-outlined">
+              logout
+          </span>
+      </a>
+  </div>
   </div>
 </div>
+
+<!-- <div class="navbar"> -->
+  <!-- <div>
+      <a href="#menu" class="navBtn">Menu</a>
+      <a href="#99" class="navBtn">Other</a>
+  </div> -->
+
+  <!-- <div id="logout">
+      <a href="signin.html" class="navBtn"><span class="material-symbols-outlined">
+              logout
+          </span>
+      </a>
+  </div>
+
+
+</div> -->
  
 <div class="slideshow-container">
 
@@ -149,10 +203,10 @@ body, html {
   
     <div class="w3-row w3-center w3-card w3-padding">
       <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-        <div class="w3-col s4 tablink">Eat</div>
+        <div class="w3-col s4 tablink">Dịch vụ du lịch</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-        <div class="w3-col s4 tablink">Phương thức di chuyển</div>
+        <div class="w3-col s4 tablink">Phương thức thanh toán</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Weather');">
         <div class="w3-col s4 tablink">Thời Tiết</div>
@@ -161,37 +215,20 @@ body, html {
     </div>
 
     <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-      <h5></h5>
-      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-    
-      <h5>Honey Almond Granola with Fruits</h5>
-      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-    
-      <h5>Belgian Waffle</h5>
-      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-    
-      <h5>Scrambled eggs</h5>
-      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-    
-      <h5>Blueberry Pancakes</h5>
-      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+      <div class="haha">
+        <img class="keke" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/02/24/1677219933439-7c51e6effd06b3ae80d7e0c9899cf4b3.png?tr=w-256" alt=""> <img src="https://ik.imagekit.io/tvlk/image/imageResource/2023/02/24/1677219906123-c8e85094846da6a19555e89a2151944b.png?tr=w-256" alt="">
+      </div>
+      <br>
+      <div class="hihi">
+        <img class="kiki" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/02/24/1677219891792-37e6f4b45238fb6a49575ac2499509e4.png?tr=w-256" alt=""> <img src="https://ik.imagekit.io/tvlk/image/imageResource/2023/02/24/1677219936461-2be5d10cfaec2401ef4f97eebf2cf76c.png?tr=w-256" alt="">
+      </div>
+      
     </div>
 
     <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Coffee</h5>
-      <p class="w3-text-grey">Regular coffee 2.50</p><br>
-    
-      <h5>Chocolato</h5>
-      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
-    
-      <h5>Corretto</h5>
-      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
-    
-      <h5>Iced tea</h5>
-      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
-    
-      <h5>Soda</h5>
-      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+      <img src="https://ik.imagekit.io/tvlk/image/imageResource/2019/05/20/1558339548088-c536c896b175cb38f99a31f5dd2a989a.png?tr=h-19,q-75,w-57" alt=""> <img src="https://ik.imagekit.io/tvlk/image/imageResource/2019/05/20/1558339578215-99466ea3d377ada2939bf2117df21b11.png?tr=h-19,q-75,w-57" alt=""> <img src="https://ik.imagekit.io/tvlk/image/imageResource/2022/07/08/1657286372391-45dab552eed9b787bfc93547e26c6d87.png?tr=h-19,q-75,w-57" alt=""> <img src="https://ik.imagekit.io/tvlk/image/imageResource/2019/05/20/1558339553631-9cebb9f6a7a3b0e427b7a2d9da2fd8c0.png?tr=h-19,q-75,w-57x`" alt=""> 
+      <br>
+      <img src="https://ik.imagekit.io/tvlk/image/imageResource/2019/05/20/1558339557703-5697f31b3e12a942eabc0f613bff8fb9.png?tr=h-19,q-75,w-57" alt=""> <img src="https://ik.imagekit.io/tvlk/image/imageResource/2019/05/20/1558339567663-c7c5e25757f0d69375aa6de6ad57958f.png?tr=h-19,q-75,w-57" alt=""> <img src="https://ik.imagekit.io/tvlk/image/imageResource/2023/08/15/1692094839134-e4b4b67ef82e8c19bb19e63d27b0f3ad.png?tr=h-19,q-75,w-57" alt="">
     </div>  
 
     <div id="Weather" class="w3-container menu w3-padding-48 w3-card">

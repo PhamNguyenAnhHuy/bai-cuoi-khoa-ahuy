@@ -96,7 +96,7 @@ const API_KEY ="e5f09c8f6b6b9f0bb90fd299f434ecef";
 const DEFAULT_VALUE = "--";
 
 searchInput.addEventListener("change", (event) =>{
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${event.target.value}&APPID=${API_KEY}&units=metric&lang=kr`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${event.target.value}&APPID=${API_KEY}&units=metric&lang=Vi`)
     .then(response => response.json())
     .then((data)=>{
         cityName.innerHTML = data.name || DEFAULT_VALUE;
